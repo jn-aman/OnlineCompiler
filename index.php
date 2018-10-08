@@ -22,7 +22,8 @@ $os1[]=$char2;
 
 }
 
-print_r($os1);
+print_r($os1[0]);
+
 ?>
 </body>
 </html>
