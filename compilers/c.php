@@ -15,11 +15,25 @@ $p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
 
 
     $myfile = fopen($p, "r") or die("Unable to open file!");
+}
+
+
 // Output one line until end-of-file
 while(!feof($myfile)) {
     $os[] = fgets($myfile);
 }
 fclose($myfile);
+
+
+
+foreach ($os as $char2) {
+$char2=str_replace("\r\n","",$char2);
+$os1[]=$char2;
+
+}
+
+
+
 
 
 
@@ -80,7 +94,7 @@ function match_my_string($needle , $haystack ) {
 }
 
 $check1=false;
-foreach ($os as $char1) {
+foreach ($os1 as $char1) {
 
 $check1=match_my_string($char1,$code);
 if($check1)
