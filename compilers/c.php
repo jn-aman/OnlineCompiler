@@ -78,6 +78,8 @@ if($check)
 }
 }
 
+$statement=" cannot be used as it can be a malware";
+$wd=$wd.$statement;
 if($check)
 {
 
