@@ -9,7 +9,7 @@ while(!feof($myfile)) {
 fclose($myfile);
 print_r($text[0]);
 
-echo $_SERVER['DOCUMENT_ROOT'];
+echo $_SERVER['DOCUMENT_ROOT']."/word.txt";
 ?>
 </body>
 </html>
