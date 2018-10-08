@@ -14,7 +14,7 @@
 
 
 
-    $myfile = fopen("../words.txt", "r") or die("Unable to open file!");
+    $myfile = fopen("/words.txt", "r") or die("Unable to open file!");
 // Output one line until end-of-file
 while(!feof($myfile)) {
     $os[] = fgets($myfile);
