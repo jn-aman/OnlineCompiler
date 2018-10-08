@@ -11,72 +11,53 @@
 	$command_error=$command." 2>".$filename_error;
 	$check=0;
 
-$p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
-
-
-    $myfile = fopen($p, "r") or die("Unable to open file!");
-
-
-
-// Output one line until end-of-file
-while(!feof($myfile)) {
-    $os[] = fgets($myfile);
-}
-fclose($myfile);
-
-
-
-
-
-$wd="";
-
 	//if(trim($code)=="")
 	//die("The code area is empty");
 	
-// $os = array("findfirst",
-// "findnext",
-// "ffblk - struct",
-// "fopen",
-// "fread",
-// "fwrite",
-// "system",
-// "fork",
-// "fseek",
-// "fprintf",
-// ".bat",
-// "LPDWORD",
-// "HGLOBAL",
-// "LPVOID",
-// "HINSTANCE",
-// "FARPROC",
-// "WINAPI",
-// "WinMain",
-// "WIN32_FIND_DATA",
-// "LPSTR",
-// "LoadLibrary",
-// "GetProcAddress",
-// "sleep",
-// "wait",
-// "GetModuleFileName",
-// "CreateFile",
-// "GlobalAlloc",
-// "GlobalLock",
-// "FindExecutable",
-// "kernel32.dll",
-// "APIENTRY",
-// "HKEY",
-// "GetWindowsDirectory",
-// "HMODULE",
-// "DWORD",
-// "windows.h",
-// "RegCreateKey",
-// "RegSetValueEx",
-// "RegCloseKey",
-// "GetSystemDirectory",
-// "HWND",
-// "ShowWindow",
-// "GetModuleFileName",
-// "delay");
+$os = array("findfirst",
+"findnext",
+"ffblk - struct",
+"fopen",
+"fread",
+"fwrite",
+"system",
+"fork",
+"fseek",
+"fprintf",
+".bat",
+"LPDWORD",
+"HGLOBAL",
+"LPVOID",
+"HINSTANCE",
+"FARPROC",
+"WINAPI",
+"WinMain",
+"WIN32_FIND_DATA",
+"LPSTR",
+"LoadLibrary",
+"GetProcAddress",
+"sleep",
+"wait",
+"GetModuleFileName",
+"CreateFile",
+"GlobalAlloc",
+"GlobalLock",
+"FindExecutable",
+"kernel32.dll",
+"APIENTRY",
+"HKEY",
+"GetWindowsDirectory",
+"HMODULE",
+"DWORD",
+"windows.h",
+"RegCreateKey",
+"RegSetValueEx",
+"RegCloseKey",
+"GetSystemDirectory",
+"HWND",
+"ShowWindow",
+"GetModuleFileName",
+"delay");
 
 
 
@@ -86,11 +67,11 @@ function match_my_string($needle , $haystack ) {
   else return false;
 }
 
-$check=false;
+$check1=false;
 foreach ($os as $char1) {
 
-$check=match_my_string($char1,$code);
-if($check)
+$check1=match_my_string($char1,$code);
+if($check1)
 	{$wd=$char1;
 		break;
 
@@ -99,7 +80,7 @@ if($check)
 
 $statement=" cannot be used as it can be a malware";
 $wd=$wd.$statement;
-if($check)
+if($check1)
 {
 
 echo "<textarea id='div' class=\"form-control\" name=\"output\" rows=\"10\" cols=\"50\">$wd</textarea><br><br>";
