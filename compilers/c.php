@@ -26,16 +26,9 @@ fclose($myfile);
 
 
 
-foreach ($os as $char2) {
-$char2=str_replace("\r\n","",$char2);
-$os1[]=$char2;
-
-}
 
 
-
-
-
+$wd="";
 
 	//if(trim($code)=="")
 	//die("The code area is empty");
@@ -94,7 +87,7 @@ function match_my_string($needle , $haystack ) {
 }
 
 $check1=false;
-foreach ($os1 as $char1) {
+foreach ($os as $char1) {
 
 $check1=match_my_string($char1,$code);
 if($check1)
