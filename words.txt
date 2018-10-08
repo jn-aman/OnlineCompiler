@@ -48,7 +48,7 @@ blkparse 
 blkrawverify 
 bno_plot 
 bootctl 
-break 
+ 
 btt 
 busctl 
 c99 
@@ -103,7 +103,7 @@ comm 
 command 
 comp_err 
 compress 
-continue 
+ 
 coredumpctl 
 coreutils 
 cp 
