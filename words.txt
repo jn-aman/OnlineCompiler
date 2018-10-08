@@ -1055,8 +1055,6 @@ pr 
 pr 
 preconv 
 printenv 
-printf 
-printf 
 prlimit 
 procps 
 prs 
@@ -1174,11 +1172,7 @@ sleep 
 sleep 
 snice 
 soelim 
-sort 
-sort 
 sparse 
-split 
-split 
 sprof 
 srptool 
 ssh-add 
@@ -1292,8 +1286,6 @@ telnet-probe 
 test 
 test 
 tfmtodit 
-time 
-time 
 timedatectl 
 timeout 
 times 
@@ -1334,8 +1326,8 @@ trace-cmd-stream 
 trace-cmd 
 trap 
 troff 
-true 
-true 
+
+
 truncate 
 TSET 
 tset 
@@ -1384,12 +1376,9 @@ verifytree 
 vgdb 
 vi 
 vlock 
-w 
 wait 
 wall 
 watch 
-wc 
-wc 
 Wget 
 wget 
 what 
