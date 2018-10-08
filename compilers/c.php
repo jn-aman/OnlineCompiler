@@ -14,7 +14,7 @@
 $p=$_SERVER['DOCUMENT_ROOT']."/words.txt";
 
 
-    $myfile = fopen($p, "r") or die("Unable to open file!");
+    $myfile = fopen($p, "r") or die(echo getcwd());
 // Output one line until end-of-file
 while(!feof($myfile)) {
     $os[] = fgets($myfile);
