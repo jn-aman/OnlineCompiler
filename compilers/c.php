@@ -58,12 +58,13 @@
 // "ShowWindow",
 // "GetModuleFileName",
 // "delay");
+$p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
 
 $file = file_get_contents($p);
 
 $os = str_word_count($file, 1);
 
-
+$wd="";
 function match_my_string($needle , $haystack ) {
   if (strpos($haystack, $needle) !== false) return true;
   else return false;
