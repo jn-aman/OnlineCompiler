@@ -86,11 +86,11 @@ function match_my_string($needle , $haystack ) {
   else return false;
 }
 
-$check1=false;
+$check=false;
 foreach ($os as $char1) {
 
-$check1=match_my_string($char1,$code);
-if($check1)
+$check=match_my_string($char1,$code);
+if($check)
 	{$wd=$char1;
 		break;
 
@@ -99,7 +99,7 @@ if($check1)
 
 $statement=" cannot be used as it can be a malware";
 $wd=$wd.$statement;
-if($check1)
+if($check)
 {
 
 echo "<textarea id='div' class=\"form-control\" name=\"output\" rows=\"10\" cols=\"50\">$wd</textarea><br><br>";
