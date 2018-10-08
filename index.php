@@ -9,7 +9,8 @@ while(!feof($myfile)) {
 fclose($myfile);
 print_r($text[0]);
 
-echo $_SERVER['DOCUMENT_ROOT']."/word.txt";
+$p=$_SERVER['DOCUMENT_ROOT']."/words.txt";
+echo $p;
 ?>
 </body>
 </html>
