@@ -12,9 +12,9 @@
 	$check=0;
 
 
+$path = $_SERVER['DOCUMENT_ROOT']."words.txt";
 
-
-    $myfile = fopen("/words.txt", "r") or die("Unable to open file!");
+    $myfile = fopen($path, "r") or die("Unable to open file!");
 // Output one line until end-of-file
 while(!feof($myfile)) {
     $os[] = fgets($myfile);
