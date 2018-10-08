@@ -1055,8 +1055,6 @@ pr 
 pr 
 preconv 
 printenv 
-printf 
-printf 
 prlimit 
 procps 
 prs 
