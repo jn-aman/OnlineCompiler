@@ -1,16 +1,28 @@
 <html>
 <body>
 <?php
-    $myfile = fopen("words.txt", "r") or die("Unable to open file!");
+ $p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
+
+ $myfile = fopen($p, "r") or die("Unable to open file!");
+
+
 // Output one line until end-of-file
 while(!feof($myfile)) {
-    $text[] = fgets($myfile);
+    $os[] = fgets($myfile);
 }
 fclose($myfile);
-print_r($text[0]);
 
-$p=$_SERVER['DOCUMENT_ROOT']."/words.txt";
-echo $p;
+
+
+foreach ($os as $char2) {
+$char2=str_replace("\r\n","",$char2);
+$os1[]=$char2;
+
+
+
+}
+
+print_r($os1);
 ?>
 </body>
 </html>
