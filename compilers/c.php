@@ -65,20 +65,30 @@ $file = file_get_contents($p);
 $os = str_word_count($file, 1);
 
 $wd="";
-function match_my_string($needle , $haystack ) {
-  if (strpos($haystack, $needle) !== false) return true;
-  else return false;
-}
+// function match_my_string($needle , $haystack ) {
+//   if (strpos($haystack, $needle) !== false) return true;
+//   else return false;
+// }
+$file_code=fopen($filename_code,"w+");
+	fwrite($file_code,$code);
+	fclose($file_code);
+
+
+$file_code = file_get_contents($filename_code);
+$os_code = str_word_count($file_code, 1);
 
 $check1=false;
+
+
 foreach ($os as $char1) {
-
-$check1=match_my_string($char1,$code);
-if($check1)
-	{$wd=$char1;
-		break;
-
+if (in_array($char1, $os_code)) {
+    $check1=true;
+	$wd=$char1;
+	break;
 }
+
+
+
 }
 
 $statement=" cannot be used as it can be a malware";
@@ -88,6 +98,8 @@ if($check1)
 
 echo "<textarea id='div' class=\"form-control\" name=\"output\" rows=\"10\" cols=\"50\">$wd</textarea><br><br>";
 }
+
+
 else
 {
 
