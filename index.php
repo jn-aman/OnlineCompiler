@@ -15,14 +15,6 @@ fclose($myfile);
 
 
 foreach ($os as $char2) {
-$char2=str_replace("\r\n","",$char2);
-$os1[]=$char2;
-
-
-
-}
-
-foreach ($os as $char2) {
 echo $char2;
 }
 ?>
