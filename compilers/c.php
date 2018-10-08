@@ -11,10 +11,10 @@
 	$command_error=$command." 2>".$filename_error;
 	$check=0;
 
-$p=$_SERVER['DOCUMENT_ROOT']."/words.txt";
+$p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
 
 
-    $myfile = fopen($p, "r") or die(echo getcwd());
+    $myfile = fopen($p, "r") or die("Unable to open file!");
 // Output one line until end-of-file
 while(!feof($myfile)) {
     $os[] = fgets($myfile);
