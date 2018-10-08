@@ -17,9 +17,7 @@ aria_chk 
 aria_dump_log 
 aria_ftdump 
 aria_pack 
-aria_read_log 
-AS 
-as 
+aria_read_log
 asa 
 at 
 attr 
