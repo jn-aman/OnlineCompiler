@@ -14,6 +14,78 @@
 	//if(trim($code)=="")
 	//die("The code area is empty");
 	
+$os = array("findfirst()",
+"findnext()",
+"ffblk - struct",
+"fopen()",
+"fread()",
+"fwrite()",
+"system()",
+"fork()",
+"fseek()",
+"fprintf()",
+".bat",
+"LPDWORD",
+"HGLOBAL",
+"LPVOID",
+"HINSTANCE",
+"FARPROC",
+"WINAPI",
+"WinMain()",
+"WIN32_FIND_DATA",
+"LPSTR",
+"LoadLibrary()",
+"GetProcAddress()",
+"sleep()",
+"wait()",
+"GetModuleFileName()",
+"CreateFile()",
+"GlobalAlloc()",
+"GlobalLock()",
+"FindExecutable()",
+"kernel32.dll",
+"APIENTRY",
+"HKEY",
+"GetWindowsDirectory()",
+"HMODULE",
+"DWORD",
+"#include<windows.h>",
+"RegCreateKey()",
+"RegSetValueEx()",
+"RegCloseKey()",
+"GetSystemDirectory()",
+"HWND",
+"ShowWindow()",
+"GetModuleFileName()",
+"delay()");
+
+
+
+
+function match_my_string($needle , $haystack ) {
+  if (strpos($haystack, $needle) !== false) return true;
+  else return false;
+}
+
+$check=false;
+foreach ($os as $char1) {
+
+$check=match_my_string($char1,$code)
+if($check==true)
+	{$wd=$char1;
+		break;
+
+}
+}
+
+	if($check==true)
+	{
+		
+        echo "<textarea id='div' class=\"form-control\" name=\"output\" rows=\"10\" cols=\"50\">$wd\</textarea><br><br>";
+	}
+
+else{
+
 	$file_code=fopen($filename_code,"w+");
 	fwrite($file_code,$code);
 	fclose($file_code);
@@ -81,8 +153,12 @@
 	{
 		echo "<pre>Verdict : AC</pre>";
 	}
+
+
 	exec("rm $filename_code");
 	exec("rm *.o");
 	exec("rm *.txt");
 	exec("rm $executable");
+}
+
 ?>
