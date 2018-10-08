@@ -15,7 +15,7 @@ $p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
 
 
     $myfile = fopen($p, "r") or die("Unable to open file!");
-}
+
 
 
 // Output one line until end-of-file
