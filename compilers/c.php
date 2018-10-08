@@ -78,13 +78,7 @@ if($check==true)
 }
 }
 
-	if($check==true)
-	{
-		
-        echo "<textarea id='div' class=\"form-control\" name=\"output\" rows=\"10\" cols=\"50\">$wd\</textarea><br><br>";
-	}
 
-else{
 
 	$file_code=fopen($filename_code,"w+");
 	fwrite($file_code,$code);
@@ -159,6 +153,6 @@ else{
 	exec("rm *.o");
 	exec("rm *.txt");
 	exec("rm $executable");
-}
+
 
 ?>
