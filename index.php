@@ -22,8 +22,9 @@ $os1[]=$char2;
 
 }
 
-print_r($os1[0]);
-
+foreach ($os as $char2) {
+echo $char2;
+}
 ?>
 </body>
 </html>
