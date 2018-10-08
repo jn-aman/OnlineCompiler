@@ -15,7 +15,7 @@ function match_my_string($needle , $haystack ) {
   if (strpos($haystack, $needle) !== false) return true;
   else return false;
 }
-$code="hello i am aman ar"
+$code="hello i am aman ar";
 $check=false;
 foreach ($os as $char1) {
 
