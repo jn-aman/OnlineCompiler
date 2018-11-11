@@ -123,12 +123,7 @@
 
 
 <div class="col-sm-4">
-<?php
-date_default_timezone_set("Asia/Dhaka");
- $t=date("H:i:s");
-echo"<b>Server Time:  $t</b>";
 
-?>
 </div>
 </div>
 </div>
