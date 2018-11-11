@@ -1355,7 +1355,7 @@ fopen
 fread
 fwrite
 system
-fork
+fork()
 fseek
 fprintf
 .bat
