@@ -4,7 +4,8 @@ abidw 
 abilint 
 abipkgdiff 
 ac 
-addftinfo 
+addftinfo
+delay 
 addr2line 
 admin 
 afmtodit 
