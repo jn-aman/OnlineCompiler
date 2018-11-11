@@ -62,7 +62,15 @@ $p=$_SERVER['DOCUMENT_ROOT']."/compilers/words.txt";
 
 $file = file_get_contents($p);
 
-$os = str_word_count($file, 1);
+
+$spam_words = file($p, FILE_IGNORE_NEW_LINES);
+
+for ($x = 0; $x < sizeof($spam_words); $x++) {
+  $spam_words[$x] = substr($spam_words[$x], 0, -2);
+
+ } 
+$os=$spam_words;
+
 
 $wd="";
 // function match_my_string($needle , $haystack ) {
