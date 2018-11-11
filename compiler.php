@@ -32,17 +32,14 @@
   <div class="col-sm-12">
   <nav class="shadow navbar navbar-inverse navbar-fixed-top nbar">
     <div class="navbar-header">
-      <a class="navbar-brand lspace" href="index.php">RUET OJ</a>
+      <a class="navbar-brand lspace" href="index.php">ADHS</a>
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
     </div>
     <div class="collapse navbar-collapse navbar-menubuilder">
     <ul class="nav navbar-nav">
       <li class="space"><a href="compiler.php"><i class="fa fa-code ispace"></i>Compiler</a></li>
-      <li class="space"><a href="archive.php"><i class="fa fa-archive ispace"></i>Problem Archive</a></li>
-      <li class="space"><a href="contest.php"><i class="fa fa-cogs ispace"></i>Contests</a></li>
-      <li class="space"><a href="#"><i class="fa fa-check-square ispace"></i>Debug</a></li>
-      
+     
       
     </ul>
     </div>
@@ -79,7 +76,7 @@
 <option value="c">C</option>
 <option value="cpp">C++</option>
 <option value="cpp11">C++11</option>
-<option value="java">Java</option>
+
 
 	
 
@@ -107,7 +104,7 @@
 <div class="row area">
 <div class="col-sm-3">
 <!-- BEGIN: Powered by Supercounters.com -->
-<center><script type="text/javascript" src="http://widget.supercounters.com/online_i.js"></script><script type="text/javascript">sc_online_i(1360839,"ffffff","e61c1c");</script><br><noscript><a href="http://www.supercounters.com/">Free Online Counter</a></noscript>
+<center><script type="text/javascript" src="http://widget.supercounters.com/online_i.js"></script><script type="text/javascript">sc_online_i(1360839,"ffffff","e61c1c");</script><br><noscript><a href="http://www.supercounters.com/">Counter</a></noscript>
 </center>
 <!-- END: Powered by Supercounters.com -->
 
@@ -118,8 +115,8 @@
 
 <div class="fm">
 
-<b>Beta Version-2016</b><br>
-<b>Developed By <a href="https://fb.com/ashadullah.shawon">Ashadullah Shawon</a></b>
+<b>Beta Version-2018</b><br>
+<b>Developed By ADHS</a></b>
 
 </div>
 </div>

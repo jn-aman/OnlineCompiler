@@ -164,19 +164,19 @@ else
 	echo "<pre>Compiled And Executed In: $seconds s</pre>";
 	if($check==1)
 	{
-		echo "<pre>Verdict : CE</pre>";
+		echo "<pre>Verdict : Compile time Error</pre>";
 	}
 	else if($check==0 && $seconds>3)
 	{
-		echo "<pre>Verdict : TLE</pre>";
+		echo "<pre>Verdict : Time Limit Exceeded</pre>";
 	}
 	else if(trim($output)=="")
 	{
-		echo "<pre>Verdict : WA</pre>";
+		echo "<pre>Verdict : Wrong Answer</pre>";
 	}
 	else if($check==0)
 	{
-		echo "<pre>Verdict : AC</pre>";
+		echo "<pre>Verdict : Accepted</pre>";
 	}
 
 

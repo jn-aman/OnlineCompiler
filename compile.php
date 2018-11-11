@@ -34,9 +34,6 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="space"><a href="compiler.php"><i class="fa fa-code ispace"></i>Compiler</a></li>
-      <li class="space"><a href="archive.php"><i class="fa fa-archive ispace"></i>Problem Archive</a></li>
-      <li class="space"><a href="contest.php"><i class="fa fa-cogs ispace"></i>Contests</a></li>
-      <li class="space"><a href="debug.php"><i class="fa fa-check-square ispace"></i>Debug</a></li>
      
       
     </ul>
@@ -141,8 +138,8 @@
 
 <div class="fm">
 
-<b>Beta Version-2016</b><br>
-<b>Developed By <a href="https://fb.com/ashadullah.shawon">Ashadullah Shawon</a></b>
+<b>Beta Version-2018</b><br>
+<b>Developed By ADHS</a></b>
 
 </div>
 </div>
