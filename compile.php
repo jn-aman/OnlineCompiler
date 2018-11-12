@@ -30,7 +30,7 @@
 <div class="col-sm-12">
 <nav class="navbar navbar-inverse navbar-fixed-top nbar">
     <div class="navbar-header">
-      <a class="navbar-brand lspace" href="index.php">RUET OJ</a>
+      <a class="navbar-brand lspace" href="index.php">ADHS</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="space"><a href="compiler.php"><i class="fa fa-code ispace"></i>Compiler</a></li>
